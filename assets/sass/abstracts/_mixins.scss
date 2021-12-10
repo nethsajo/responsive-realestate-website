@@ -1,3 +1,16 @@
 /****************************/
 /*          MIXINS          */
 /****************************/
+
+@mixin container($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

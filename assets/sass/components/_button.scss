@@ -1,0 +1,39 @@
+/****************************/
+/*          BUTTONS         */
+/****************************/
+
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 9px;
+    transition: all 0.3s;
+    color: #333;
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-3px);
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  &--secondary {
+  }
+
+  &--lg {
+    padding: 1.6rem 3.2rem;
+  }
+
+  &--sm {
+    padding: 0.8rem 1.6rem;
+  }
+}

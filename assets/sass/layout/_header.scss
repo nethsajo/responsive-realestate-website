@@ -1,3 +1,48 @@
 /****************************/
 /*          HEADER          */
 /****************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  @include container($container-width-lg);
+
+  &__logo-box {
+    width: auto;
+    cursor: pointer;
+  }
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  &_register-box {
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.6rem;
+      transition: all 0.3s;
+      color: #333;
+    }
+
+    &:hover,
+    &:active {
+    }
+  }
+}

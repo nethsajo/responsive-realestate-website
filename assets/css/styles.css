@@ -1,0 +1,106 @@
+/****************************/
+/*        FUNCTIONS         */
+/****************************/
+/****************************/
+/*          MIXINS          */
+/****************************/
+/****************************/
+/*        VARIABLES         */
+/****************************/
+/****************************/
+/*        ANIMATIONS        */
+/****************************/
+/****************************/
+/*          BASE            */
+/****************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1; }
+
+/****************************/
+/*        TYPOGRAPHY        */
+/****************************/
+/****************************/
+/*        UTILITIES         */
+/****************************/
+/****************************/
+/*          BUTTONS         */
+/****************************/
+.btn:link, .btn:visited {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 9px;
+  transition: all 0.3s;
+  color: #333; }
+
+.btn:hover, .btn:active {
+  transform: translateY(-3px); }
+
+.btn--primary {
+  background-color: #087f5b;
+  color: #fff; }
+
+.btn--lg {
+  padding: 1.6rem 3.2rem; }
+
+.btn--sm {
+  padding: 0.8rem 1.6rem; }
+
+/****************************/
+/*          FOOTER          */
+/****************************/
+/****************************/
+/*          GRIDS           */
+/****************************/
+/****************************/
+/*          HEADER          */
+/****************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem; }
+  .header__logo-box {
+    width: auto;
+    cursor: pointer; }
+  .header__logo {
+    font-size: 2rem;
+    font-weight: 900; }
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  color: #333; }
+
+/****************************/
+/*        NAVIGATION        */
+/****************************/
+/****************************/
+/*            HOME          */
+/****************************/
