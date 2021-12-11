@@ -8,10 +8,13 @@
 @import "./base/utilities";
 
 @import './components/button';
+@import './components/composition';
+@import './components/feature';
 
 @import "./layout/footer";
 @import "./layout/grid";
 @import "./layout/header";
+@import "./layout/hero";
 @import "./layout/navigation";
 
 @import './pages/home';

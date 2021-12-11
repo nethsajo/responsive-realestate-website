@@ -3,6 +3,11 @@
 /****************************/
 
 .heading-primary {
+  font-size: 5.4rem;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  line-height: 1.05;
+  animation: moveInRight 1.5s ease-out;
 }
 
 .heading-secondary {

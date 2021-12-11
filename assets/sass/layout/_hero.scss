@@ -1,0 +1,30 @@
+.hero {
+  @include container($container-width-lg);
+
+  &__top-col {
+    @include container($container-width-sm);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+  }
+
+  &__bottom-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 11px;
+  }
+}

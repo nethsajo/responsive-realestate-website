@@ -2,18 +2,20 @@
 /*          BUTTONS         */
 /****************************/
 
+%btn-placeholder {
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
 .btn {
   &:link,
   &:visited {
     display: inline-block;
-    font-family: inherit;
-    font-size: 1.6rem;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 9px;
-    transition: all 0.3s;
-    color: #333;
+    @extend %btn-placeholder;
   }
 
   &:hover,
@@ -34,6 +36,38 @@
   }
 
   &--sm {
-    padding: 0.8rem 1.6rem;
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+.btn-arrowed {
+  &:link,
+  &:visited {
+    display: flex;
+    align-items: center;
+    @extend %btn-placeholder;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    right: -3rem;
+  }
+
+  &__title {
+    transition: all 0.3s;
+  }
+
+  &:hover &__icon {
+    animation: slideInLeft 0.5s 0.1s ease-out backwards;
+    right: 1.5rem;
+  }
+
+  &:hover &__title {
+    transform: translateX(-1.5rem);
   }
 }

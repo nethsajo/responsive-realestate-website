@@ -1,3 +1,32 @@
 /****************************/
 /*          GRIDS           */
 /****************************/
+.container-small {
+  @include container($container-width-sm);
+}
+
+.d-grid {
+  display: grid;
+  row-gap: $row-gap;
+  column-gap: $column-gap;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.grid-center-h {
+  justify-content: center;
+}
