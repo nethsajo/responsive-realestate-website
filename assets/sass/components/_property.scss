@@ -1,12 +1,10 @@
-.featured {
+.property {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   row-gap: $column-gap;
   column-gap: $column-gap;
 
   &__box {
-    display: flex;
-    align-items: center;
     border-radius: 11px;
     overflow: hidden;
     background-color: $color-white;
@@ -14,7 +12,7 @@
   }
 
   &__img {
-    width: 30%;
+    width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;

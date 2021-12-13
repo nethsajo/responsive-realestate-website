@@ -1,9 +1,12 @@
 .achievement {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  align-items: start;
-  align-content: start;
-  gap: 3.2rem;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(10%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 
   &__box {
     display: flex;

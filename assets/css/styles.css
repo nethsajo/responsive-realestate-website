@@ -69,9 +69,13 @@ body {
   text-align: center; }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.2; }
+
+.subheading {
+  font-size: 1.6rem;
+  line-height: 1.6; }
 
 /****************************/
 /*        UTILITIES         */
@@ -92,14 +96,16 @@ body {
   margin-bottom: 3.6rem; }
 
 .u-margin-bottom-xl {
-  margin-bottom: 9.6rem; }
+  margin-bottom: 9.6rem !important; }
 
 .achievement {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  align-items: start;
-  align-content: start;
-  gap: 3.2rem; }
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(10%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
   .achievement__box {
     display: flex;
     align-items: center;
@@ -182,26 +188,24 @@ body {
 .btn-arrowed:hover .btn-arrowed__title {
   transform: translateX(-1.5rem); }
 
-.featured {
+.property {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   row-gap: 6.4rem;
   column-gap: 6.4rem; }
-  .featured__box {
-    display: flex;
-    align-items: center;
+  .property__box {
     border-radius: 11px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.05); }
-  .featured__img {
-    width: 30%;
+  .property__img {
+    width: 100%;
     height: 100%;
     display: block;
     object-fit: cover; }
-  .featured__text-box {
+  .property__text-box {
     padding: 2.4rem; }
-  .featured__title {
+  .property__title {
     font-size: 1.8rem;
     line-height: 1.5; }
 
@@ -310,7 +314,8 @@ body {
   align-items: center;
   grid-template-columns: 1fr max-content 1fr;
   margin-bottom: 3.2rem;
-  gap: 1.2rem; }
+  gap: 1.2rem;
+  letter-spacing: 1.5px; }
   .seenon__text::before, .seenon__text::after {
     content: "";
     display: inline-block;
@@ -326,7 +331,7 @@ body {
   display: flex;
   gap: 6.4rem;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .seenon__logo {
   height: 3.2rem;
@@ -355,8 +360,30 @@ body {
 .section-hero {
   padding: 3.2rem 0; }
 
-.section-featured {
+.section-about {
   padding: 9.6rem 0; }
+
+.about__achievements {
+  position: relative; }
+
+.about__img {
+  width: 100%;
+  border-radius: 11px; }
+
+.about__content {
+  padding: 4.8rem 6.4rem; }
+
+.about__heading {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem; }
+
+.about__paragraph {
+  font-size: 1.6rem;
+  line-height: 1.6; }
+
+.section-featured {
+  padding: 6.4rem 0; }
 
 .section-title {
   display: flex;

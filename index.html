@@ -21,7 +21,7 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Featured</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Properties</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Agents</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
@@ -48,78 +48,83 @@
             <a href="#" class="btn btn--primary btn--sm">View all properties</a>
           </div>
           <div class="hero__bottom-col">
-            <div class="achievement">
-              <div class="achievement__box achievement__box--1">
-                <ion-icon name="star" class="achievement__icon"></ion-icon>
-                <div class="achievement__text-box">
-                  <p class="achievement__number">25</p>
-                  <p class="achievement__text">Years Experienced</p>
-                </div>
+            <div class="seenon">
+              <h2 class="seenon__text">As seen on</h2>
+              <div class="seenon__logos">
+                <img src="./assets/images/featured/business-insider.png" alt="Business Insider" class="seenon__logo">
+                <img src="./assets/images/featured/forbes.png" alt="Forbes" class="seenon__logo">
+                <img src="./assets/images/featured/the-new-york-times.png" alt="New York Times" class="seenon__logo">
+                <img src="./assets/images/featured/usa-today.png" alt="USA Today" class="seenon__logo">
               </div>
-              <div class="achievement__box achievement__box--2">
-                <ion-icon name="trophy" class="achievement__icon"></ion-icon>
-                <div class="achievement__text-box">
-                  <p class="achievement__number">38</p>
-                  <p class="achievement__text">Awards Gained</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <div class="container-lg">
+          <div class="about d-grid grid-col-2">
+            <div class="about__achievements">
+              <img src="./assets/images/about.jpg" alt="Inside house" class="about__img">
+              <div class="achievement">
+                <div class="achievement__box achievement__box--1">
+                  <ion-icon name="star" class="achievement__icon"></ion-icon>
+                  <div class="achievement__text-box">
+                    <p class="achievement__number">25</p>
+                    <p class="achievement__text">Years Experienced</p>
+                  </div>
                 </div>
-              </div>
-              <div class="achievement__box achievement__box--3">
-                <ion-icon name="home" class="achievement__icon"></ion-icon>
-                <div class="achievement__text-box">
-                  <p class="achievement__number">683+</p>
-                  <p class="achievement__text">Property Built</p>
+                <div class="achievement__box achievement__box--3">
+                  <ion-icon name="home" class="achievement__icon"></ion-icon>
+                  <div class="achievement__text-box">
+                    <p class="achievement__number">683+</p>
+                    <p class="achievement__text">Property Built</p>
+                  </div>
                 </div>
-              </div>
-              <div class="achievement__box achievement__box--4">
-                <ion-icon name="happy" class="achievement__icon"></ion-icon>
-                <div class="achievement__text-box">
-                  <p class="achievement__number">10,300+</p>
-                  <p class="achievement__text">Happy Clients</p>
+                <div class="achievement__box achievement__box--4">
+                  <ion-icon name="happy" class="achievement__icon"></ion-icon>
+                  <div class="achievement__text-box">
+                    <p class="achievement__number">10,300+</p>
+                    <p class="achievement__text">Happy Clients</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- <img src="./assets/images/hero/hero-large-3.jpg" alt="Photo of inside house" class="hero__img"> -->
+            <div class="about__content">
+              <h2 class="about__heading">With 25 years of experience we are ready to help you</h2>
+              <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum provident pariatur velit, quod vero officia! Iste earum quos totam, iusto voluptatum quaerat nam esse dolorem quod veritatis distinctio eaque!</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- FEATURED SECTION -->
       <section class="section-featured">
-        <div class="container-lg">
-          <div class="section-title u-margin-bottom-xl">
-            <h2 class="heading-secondary">Best Properties for the month</h2>
-            <div class="control">
-              <button class="control__btn">
-                <ion-icon name="arrow-back-outline" class="control__icon"></ion-icon>
-              </button>
-              <button class="control__btn">
-                <ion-icon name="arrow-forward-outline" class="control__icon"></ion-icon>
-              </button>
-            </div>
+        <div class="container-sm d-grid grid-col-2 grid-center-v u-margin-bottom-xl">
+          <h2 class="heading-secondary">Choose from our listing properties</h2>
+          <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab culpa dicta repellendus iusto consequatur quia!</p>
           </div>
-
-          <div class="featured">
-            <div class="featured__box">
-              <img src="./assets/images/house/house-1.jpeg" alt="House 1" class="featured__img">
-              <div class="featured__text-box">
-                <h3 class="featured__title u-margin-bottom-sm">Beatufil Family House</h3>
-                <a href="#" class="btn btn--simple">Learn more &rarr;</a>
+        </div>
+        <div class="container-lg">
+          <div class="property">
+            <div class="property__box">
+              <img src="./assets/images/house/house-1.jpeg" alt="House 1" class="property__img">
+              <div class="property__text-box">
+                <h3 class="property__title u-margin-bottom-sm">Beatufil Family House</h3>
               </div>
             </div>
-
-            <div class="featured__box">
-              <img src="./assets/images/house/house-2.jpeg" alt="House 2" class="featured__img">
-              <div class="featured__text-box">
-                <h3 class="featured__title u-margin-bottom-sm">Beatufil Family House</h3>
-                <a href="#" class="btn btn--simple">Learn more &rarr;</a>
+          
+            <div class="property__box">
+              <img src="./assets/images/house/house-2.jpeg" alt="House 2" class="property__img">
+              <div class="property__text-box">
+                <h3 class="property__title u-margin-bottom-sm">Beatufil Family House</h3>
               </div>
             </div>
-
-            <div class="featured__box">
-              <img src="./assets/images/house/house-3.jpeg" alt="House 3" class="featured__img">
-              <div class="featured__text-box">
-                <h3 class="featured__title u-margin-bottom-sm">Beatufil Family House</h3>
-                <a href="#" class="btn btn--simple">Learn more &rarr;</a>
+          
+            <div class="property__box">
+              <img src="./assets/images/house/house-3.jpeg" alt="House 3" class="property__img">
+              <div class="property__text-box">
+                <h3 class="property__title u-margin-bottom-sm">Beatufil Family House</h3>
               </div>
             </div>
           </div>

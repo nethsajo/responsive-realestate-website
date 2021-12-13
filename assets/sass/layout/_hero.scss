@@ -57,6 +57,7 @@
     grid-template-columns: 1fr max-content 1fr;
     margin-bottom: 3.2rem;
     gap: 1.2rem;
+    letter-spacing: 1.5px;
 
     &::before,
     &::after {
@@ -80,7 +81,7 @@
     display: flex;
     gap: $column-gap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__logo {

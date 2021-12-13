@@ -5,8 +5,38 @@
   padding: 3.2rem 0;
 }
 
-.section-featured {
+.section-about {
   padding: 9.6rem 0;
+}
+
+.about {
+  &__achievements {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 11px;
+  }
+
+  &__content {
+    padding: 4.8rem 6.4rem;
+  }
+
+  &__heading {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 2.4rem;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+.section-featured {
+  padding: 6.4rem 0;
 }
 
 .section-title {
