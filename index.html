@@ -28,7 +28,7 @@
         </ul>
       </nav>
       <div class="header__register-box">
-        <a href="#" class="btn">Sign up</a>
+        <a href="#" class="btn btn--simple">Sign up</a>
         <a href="#" class="btn-arrowed btn--primary btn--lg">
           <span class="btn-arrowed__title">Get started</span> 
           <ion-icon name="arrow-forward-outline" class="btn-arrowed__icon"></ion-icon>
@@ -36,50 +36,92 @@
       </div>
     </header>
     <main class="main">
+      <!-- HERO SECTION -->
       <section class="section-hero">
         <div class="hero d-grid">
           <div class="hero__top-col">
-            <h1 class="heading-primary">Let's find a home that's perfect for your family</h1>
-            <div class="hero__text-box--right">
-              <p class="hero__description">
-                The place to start your new comfortable life at! Great selection of luxury, modern
-                and unique house.
-              </p>
-              <a href="#" class="btn btn--primary btn--sm">Start membership</a>
-            </div>
+            <h1 class="heading-primary u-margin-bottom-md">Let's find a home that's perfect for your family</h1>
+            <p class="hero__description">
+              The place to start your new comfortable life at! We provide our clients with a great selection of luxury, modern
+              and unique house.
+            </p>
+            <a href="#" class="btn btn--primary btn--sm">View all properties</a>
           </div>
           <div class="hero__bottom-col">
-            <div class="features">
-              <div class="features__box features__box--1">
-                <ion-icon name="star" class="features__icon"></ion-icon>
-                <div class="features__text-box">
-                  <p class="features__number">25</p>
-                  <p class="features__text">Years Experienced</p>
+            <div class="achievement">
+              <div class="achievement__box achievement__box--1">
+                <ion-icon name="star" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">25</p>
+                  <p class="achievement__text">Years Experienced</p>
                 </div>
               </div>
-              <div class="features__box features__box--2">
-                <ion-icon name="trophy" class="features__icon"></ion-icon>
-                <div class="features__text-box">
-                  <p class="features__number">38</p>
-                  <p class="features__text">Awards Gained</p>
+              <div class="achievement__box achievement__box--2">
+                <ion-icon name="trophy" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">38</p>
+                  <p class="achievement__text">Awards Gained</p>
                 </div>
               </div>
-              <div class="features__box features__box--3">
-                <ion-icon name="home" class="features__icon"></ion-icon>
-                <div class="features__text-box">
-                  <p class="features__number">683+</p>
-                  <p class="features__text">Property Built</p>
+              <div class="achievement__box achievement__box--3">
+                <ion-icon name="home" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">683+</p>
+                  <p class="achievement__text">Property Built</p>
                 </div>
               </div>
-              <div class="features__box features__box--4">
-                <ion-icon name="happy" class="features__icon"></ion-icon>
-                <div class="features__text-box">
-                  <p class="features__number">10,300+</p>
-                  <p class="features__text">Happy Clients</p>
+              <div class="achievement__box achievement__box--4">
+                <ion-icon name="happy" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">10,300+</p>
+                  <p class="achievement__text">Happy Clients</p>
                 </div>
               </div>
             </div>
-            <img src="./assets/images/hero/hero-large-3.jpg" alt="Photo of inside house" class="hero__img">
+            <!-- <img src="./assets/images/hero/hero-large-3.jpg" alt="Photo of inside house" class="hero__img"> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED SECTION -->
+      <section class="section-featured">
+        <div class="container-lg">
+          <div class="section-title u-margin-bottom-xl">
+            <h2 class="heading-secondary">Best Properties for the month</h2>
+            <div class="control">
+              <button class="control__btn">
+                <ion-icon name="arrow-back-outline" class="control__icon"></ion-icon>
+              </button>
+              <button class="control__btn">
+                <ion-icon name="arrow-forward-outline" class="control__icon"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="featured">
+            <div class="featured__box">
+              <img src="./assets/images/house/house-1.jpeg" alt="House 1" class="featured__img">
+              <div class="featured__text-box">
+                <h3 class="featured__title u-margin-bottom-sm">Beatufil Family House</h3>
+                <a href="#" class="btn btn--simple">Learn more &rarr;</a>
+              </div>
+            </div>
+
+            <div class="featured__box">
+              <img src="./assets/images/house/house-2.jpeg" alt="House 2" class="featured__img">
+              <div class="featured__text-box">
+                <h3 class="featured__title u-margin-bottom-sm">Beatufil Family House</h3>
+                <a href="#" class="btn btn--simple">Learn more &rarr;</a>
+              </div>
+            </div>
+
+            <div class="featured__box">
+              <img src="./assets/images/house/house-3.jpeg" alt="House 3" class="featured__img">
+              <div class="featured__text-box">
+                <h3 class="featured__title u-margin-bottom-sm">Beatufil Family House</h3>
+                <a href="#" class="btn btn--simple">Learn more &rarr;</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

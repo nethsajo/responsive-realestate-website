@@ -4,3 +4,39 @@
 .section-hero {
   padding: 3.2rem 0;
 }
+
+.section-featured {
+  padding: 9.6rem 0;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  &__btn {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

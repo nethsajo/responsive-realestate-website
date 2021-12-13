@@ -1,7 +1,11 @@
 /****************************/
 /*          GRIDS           */
 /****************************/
-.container-small {
+.container-lg {
+  @include container($container-width-lg);
+}
+
+.container-sm {
   @include container($container-width-sm);
 }
 

@@ -3,14 +3,18 @@
 /****************************/
 
 .heading-primary {
-  font-size: 5.4rem;
-  font-weight: 700;
+  font-size: 6.2rem;
+  font-weight: 900;
   letter-spacing: -0.7px;
   line-height: 1.05;
   animation: moveInRight 1.5s ease-out;
+  text-align: center;
 }
 
 .heading-secondary {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .heading-tertiary {

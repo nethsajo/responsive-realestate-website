@@ -1,0 +1,50 @@
+.achievement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: start;
+  align-content: start;
+  gap: 3.2rem;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: $color-white;
+    padding: 1.6rem 2.4rem;
+    border-radius: 11px;
+    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.08);
+
+    &--1 {
+      animation: moveInTop 1s 0.5s backwards;
+    }
+
+    &--2 {
+      animation: moveInTop 1s 1s backwards;
+    }
+
+    &--3 {
+      animation: moveInTop 1.3s 1.2s backwards;
+    }
+
+    &--4 {
+      animation: moveInTop 1.3s 1.5s backwards;
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: $color-primary;
+  }
+
+  &__number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
