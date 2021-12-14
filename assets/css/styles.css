@@ -209,10 +209,23 @@ body {
     border-radius: 11px;
     background-color: #fff;
     box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.05);
-    overflow: hidden; }
+    overflow: hidden;
+    transition: all 0.3s; }
+    .property__box:hover {
+      box-shadow: 0 0 3.6rem rgba(0, 0, 0, 0.1);
+      transform: translateY(-2rem); }
   .property__img {
     width: 100%;
     filter: brightness(0.7); }
+  .property__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem; }
+  .property__price {
+    margin-left: auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #52a58c; }
   .property__text-box {
     padding: 2.4rem; }
   .property__type {
@@ -221,7 +234,6 @@ body {
     font-weight: 700;
     padding: 0.4rem 1.2rem;
     border-radius: 100px;
-    margin-bottom: 1.6rem;
     color: #f9f7f6; }
     .property__type--rental {
       background-color: #52a58c; }
@@ -295,6 +307,51 @@ body {
     height: 2rem;
     color: #52a58c;
     cursor: pointer; }
+
+.testimonials {
+  padding: 9.6rem 6.4rem; }
+  .testimonials__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: repeat(7, minmax(4rem, min-content));
+    gap: 1.8rem;
+    align-items: start; }
+  .testimonials__box {
+    background-color: #fff;
+    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.05);
+    padding: 1.6rem 2.4rem;
+    border-radius: 11px; }
+    .testimonials__box--1 {
+      grid-row: 1 / 3; }
+    .testimonials__box--2 {
+      grid-row: 1 / 2; }
+    .testimonials__box--3 {
+      grid-row: 3 / 5; }
+    .testimonials__box--4 {
+      grid-row: 2 / 4; }
+    .testimonials__box--5 {
+      grid-row: 5 / -1; }
+    .testimonials__box--6 {
+      grid-row: 4 / -1; }
+  .testimonials__header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.6rem; }
+  .testimonials__img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%; }
+  .testimonials__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #52a58c;
+    margin-bottom: 1rem; }
+  .testimonials__position {
+    font-size: 1.2rem; }
+  .testimonials__text {
+    font-size: 1.4rem;
+    line-height: 1.4; }
 
 /****************************/
 /*          FOOTER          */
@@ -473,8 +530,10 @@ body {
   padding: 6.4rem 0; }
 
 .section-testimonials {
-  padding: 9.6rem 0;
-  background-color: #e6f2ef; }
+  background-color: #e6f2ef;
+  display: grid;
+  grid-template-columns: 44fr 55fr;
+  align-items: start; }
 
 .section-title {
   display: flex;

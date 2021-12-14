@@ -10,11 +10,30 @@
     background-color: $color-white;
     box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.05);
     overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 3.6rem rgba(0, 0, 0, 0.1);
+      transform: translateY(-2rem);
+    }
   }
 
   &__img {
     width: 100%;
     filter: brightness(0.7);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+
+  &__price {
+    margin-left: auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-primary-light;
   }
 
   &__text-box {
@@ -27,7 +46,6 @@
     font-weight: 700;
     padding: 0.4rem 1.2rem;
     border-radius: 100px;
-    margin-bottom: 1.6rem;
     color: $color-grey-light-1;
 
     &--rental {
