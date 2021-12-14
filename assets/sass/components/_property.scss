@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   row-gap: $column-gap;
   column-gap: $column-gap;
+  align-items: start;
 
   &__box {
     border-radius: 11px;
@@ -17,8 +18,7 @@
   }
 
   &__text-box {
-    padding: 1.2rem 2.4rem;
-    z-index: 20;
+    padding: 2.4rem;
   }
 
   &__type {
@@ -46,9 +46,9 @@
   }
 
   &__icon {
+    color: $color-primary;
     width: 2rem;
     height: 2rem;
-    color: $color-primary;
   }
 
   &__address {
@@ -57,23 +57,71 @@
     color: $color-grey-light-2;
   }
 
-  &__description {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 1.2rem;
+  &__information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid $color-grey-light-2;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
 
-    span {
-      color: $color-primary-light;
-      display: inline-block;
-      margin-left: 0.4rem;
-      cursor: pointer;
-    }
+  &__description {
+    margin-bottom: 1.2rem;
+    grid-column: 1 / -1;
   }
 
   &__list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__item {
+    display: flex;
     align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__btn {
+    align-self: center;
+    justify-self: end;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__realtor {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex: 1;
+  }
+
+  &__realtor-img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+  }
+
+  &__realtor-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__action {
+    width: 2rem;
+    height: 2rem;
+    color: $color-primary-light;
+    cursor: pointer;
   }
 }

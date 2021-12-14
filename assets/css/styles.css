@@ -165,6 +165,9 @@ body {
 .btn--sm {
   padding: 1.2rem 2.4rem; }
 
+.btn--xs {
+  padding: 0.8rem 1.6rem; }
+
 .btn-arrowed:link, .btn-arrowed:visited {
   display: flex;
   align-items: center;
@@ -192,7 +195,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   row-gap: 6.4rem;
-  column-gap: 6.4rem; }
+  column-gap: 6.4rem;
+  align-items: start; }
   .property__box {
     border-radius: 11px;
     background-color: #fff;
@@ -202,8 +206,7 @@ body {
     width: 100%;
     filter: brightness(0.7); }
   .property__text-box {
-    padding: 1.2rem 2.4rem;
-    z-index: 20; }
+    padding: 2.4rem; }
   .property__type {
     display: inline-block;
     font-size: 1.2rem;
@@ -223,27 +226,59 @@ body {
     gap: 0.8rem;
     margin-bottom: 2.4rem; }
   .property__icon {
+    color: #087f5b;
     width: 2rem;
-    height: 2rem;
-    color: #087f5b; }
+    height: 2rem; }
   .property__address {
     font-size: 1.4rem;
     line-height: 1.4;
     color: #aaa; }
+  .property__information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #aaa;
+    font-size: 1.6rem;
+    line-height: 1.6; }
   .property__description {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 1.2rem; }
-    .property__description span {
-      color: #52a58c;
-      display: inline-block;
-      margin-left: 0.4rem;
-      cursor: pointer; }
+    margin-bottom: 1.2rem;
+    grid-column: 1 / -1; }
   .property__list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; }
+  .property__item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; }
+  .property__btn {
+    align-self: center;
+    justify-self: end; }
+  .property__footer {
+    display: flex;
     align-items: center; }
+  .property__realtor {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex: 1; }
+  .property__realtor-img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%; }
+  .property__realtor-name {
+    font-size: 1.6rem;
+    font-weight: 700; }
+  .property__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; }
+  .property__action {
+    width: 2rem;
+    height: 2rem;
+    color: #52a58c;
+    cursor: pointer; }
 
 /****************************/
 /*          FOOTER          */
