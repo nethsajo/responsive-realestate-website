@@ -20,7 +20,7 @@
 
   &:hover,
   &:active {
-    transform: translateY(-3px);
+    transform: scale(1.03) translateZ(0);
   }
 
   &--primary {
@@ -31,6 +31,12 @@
   &--simple {
     background-color: transparent;
     color: #333;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 2px solid $color-primary-light;
+    color: $color-primary;
   }
 
   &--lg {

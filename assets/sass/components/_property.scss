@@ -24,11 +24,27 @@
   &__type {
     display: inline-block;
     font-size: 1.2rem;
+    font-weight: 700;
     padding: 0.4rem 1.2rem;
     border-radius: 100px;
     margin-bottom: 1.6rem;
     color: $color-grey-light-1;
-    background-color: $color-primary-light;
+
+    &--rental {
+      background-color: $color-primary-light;
+    }
+
+    &--villa {
+      background-color: $color-orange;
+    }
+
+    &--house {
+      background-color: $color-blue;
+    }
+
+    &--luxury {
+      background-color: $color-yellow;
+    }
   }
 
   &__title {

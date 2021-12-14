@@ -95,6 +95,9 @@ body {
 .u-margin-bottom-md {
   margin-bottom: 3.6rem; }
 
+.u-margin-bottom-lg {
+  margin-bottom: 6.4rem !important; }
+
 .u-margin-bottom-xl {
   margin-bottom: 9.6rem !important; }
 
@@ -149,7 +152,7 @@ body {
   display: inline-block; }
 
 .btn:hover, .btn:active {
-  transform: translateY(-3px); }
+  transform: scale(1.03) translateZ(0); }
 
 .btn--primary {
   background-color: #087f5b;
@@ -158,6 +161,11 @@ body {
 .btn--simple {
   background-color: transparent;
   color: #333; }
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid #52a58c;
+  color: #087f5b; }
 
 .btn--lg {
   padding: 1.6rem 3.2rem; }
@@ -210,11 +218,19 @@ body {
   .property__type {
     display: inline-block;
     font-size: 1.2rem;
+    font-weight: 700;
     padding: 0.4rem 1.2rem;
     border-radius: 100px;
     margin-bottom: 1.6rem;
-    color: #f9f7f6;
-    background-color: #52a58c; }
+    color: #f9f7f6; }
+    .property__type--rental {
+      background-color: #52a58c; }
+    .property__type--villa {
+      background-color: #ff922b; }
+    .property__type--house {
+      background-color: #339af0; }
+    .property__type--luxury {
+      background-color: #fcc419; }
   .property__title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -455,6 +471,10 @@ body {
 
 .section-featured {
   padding: 6.4rem 0; }
+
+.section-testimonials {
+  padding: 9.6rem 0;
+  background-color: #e6f2ef; }
 
 .section-title {
   display: flex;
