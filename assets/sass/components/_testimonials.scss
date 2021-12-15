@@ -1,12 +1,11 @@
 .testimonials {
-  padding: 9.6rem 6.4rem;
+  padding: 8rem 6.4rem;
 
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-template-rows: repeat(7, minmax(4rem, min-content));
+    grid-template-rows: repeat(5, minmax(4rem, min-content));
     gap: 1.8rem;
-    align-items: start;
   }
 
   &__box {
@@ -37,6 +36,7 @@
 
     &--6 {
       grid-row: 4 / -1;
+      align-self: start;
     }
   }
 
@@ -57,7 +57,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: $color-primary-light;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
   }
 
   &__position {

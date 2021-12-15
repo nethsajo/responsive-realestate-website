@@ -43,7 +43,11 @@
   background-color: #e6f2ef;
   display: grid;
   grid-template-columns: 44fr 55fr;
-  align-items: start;
+  align-items: center;
+}
+
+.section-agents {
+  padding: 9.6rem 0;
 }
 
 .section-title {

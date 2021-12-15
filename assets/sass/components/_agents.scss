@@ -1,0 +1,117 @@
+.agents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  row-gap: $row-gap;
+  column-gap: $column-gap;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent {
+  height: 52rem;
+  box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+  border-radius: 9px;
+  overflow: hidden;
+
+  &__img-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8rem;
+    color: $color-grey-light-1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.2rem 2.4rem;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: all 0.3s;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    width: 100%;
+    height: 35rem;
+    display: block;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  &__details {
+    padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  &__position {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  &__type {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    line-height: 1.2;
+  }
+
+  &__about {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__job {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    color: $color-primary;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 2rem;
+      color: $color-primary-light;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      transform: translateY(-3px);
+      color: $color-primary;
+    }
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    bottom: 15%;
+  }
+
+  &:hover &__img {
+    filter: blur(3px);
+  }
+}
