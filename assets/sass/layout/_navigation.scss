@@ -2,11 +2,21 @@
 /*        NAVIGATION        */
 /****************************/
 .navigation {
+  // align-self: stretch;
+  // display: flex;
+  // align-items: center;
+
   &__list {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 3.2rem;
+
+    // & > * {
+    //   display: flex;
+    //   height: 100%;
+    //   align-items: center;
+    // }
   }
 
   &__link {
@@ -17,6 +27,7 @@
       font-size: 1.6rem;
       transition: all 0.3s;
       color: #333;
+      height: 100%;
     }
 
     &:hover,
