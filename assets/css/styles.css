@@ -483,6 +483,45 @@ body {
 /****************************/
 /*          FOOTER          */
 /****************************/
+.footer {
+  background-color: #e6f2ef;
+  padding: 8rem 0; }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 8rem;
+    column-gap: 6.4rem; }
+  .footer__logo {
+    font-size: 3rem;
+    background-image: linear-gradient(to right bottom, #087f5b, #04402e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .footer__description {
+    font-size: 1.4rem;
+    line-height: 1.4; }
+  .footer__column {
+    justify-self: end; }
+  .footer__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+    letter-spacing: 1px; }
+  .footer__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; }
+  .footer__link:link, .footer__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #484848;
+    transition: all 0.3s; }
+  .footer__copyright {
+    font-size: 1.6rem; }
+
 /****************************/
 /*          GRIDS           */
 /****************************/
@@ -653,7 +692,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6; }
 
-.section-featured {
+.section-property {
   padding: 6.4rem 0; }
 
 .section-testimonials {

@@ -1,3 +1,75 @@
 /****************************/
 /*          FOOTER          */
 /****************************/
+.footer {
+  background-color: #e6f2ef;
+  padding: 8rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+  }
+
+  &__brand {
+  }
+
+  &__logo {
+    font-size: 3rem;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary,
+      $color-primary-dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  &__column {
+    justify-self: end;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $color-grey-dark-1;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+    }
+  }
+
+  &__bottom {
+  }
+
+  &__copyright {
+    font-size: 1.6rem;
+  }
+}
