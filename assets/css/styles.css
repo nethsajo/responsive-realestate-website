@@ -50,6 +50,12 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -140,7 +146,7 @@ body {
 .agents {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  row-gap: 8rem;
+  row-gap: 9.6rem;
   column-gap: 6.4rem;
   justify-content: center;
   align-items: center; }
@@ -234,7 +240,7 @@ body {
   display: inline-block; }
 
 .btn:hover, .btn:active {
-  transform: scale(1.03) translateZ(0); }
+  transform: translateY(-3px); }
 
 .btn--primary {
   background-color: #087f5b;
@@ -284,7 +290,7 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-rows: repeat(8, 7vw);
   gap: 1.2rem;
   padding: 3.2rem 0 3.2rem 3.2rem; }
   .gallery__item--1 {
@@ -489,7 +495,7 @@ body {
   .footer__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    row-gap: 8rem;
+    row-gap: 9.6rem;
     column-gap: 6.4rem;
     border-bottom: 1px solid #ddd;
     padding-bottom: 4.8rem; }
@@ -559,7 +565,7 @@ body {
 
 .d-grid {
   display: grid;
-  row-gap: 8rem;
+  row-gap: 9.6rem;
   column-gap: 6.4rem; }
 
 .grid-col-2 {

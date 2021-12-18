@@ -14,3 +14,40 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+//MEDIA QUERY MANAGER
+//1200 - 75em
+
+// ORDER: Base + Typopgraphy > General Layout + Grid > Page Layout > Components
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-landscape {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  // @if $breakpoint == tab-portrait {
+  //   @media only screen and (max-width) {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == phone {
+  //   @media only screen and (max-width) {
+  //     @content;
+  //   }
+  // }
+
+  // @if $breakpoint == phone-xs {
+  //   @media only screen and (max-width) {
+  //     @content;
+  //   }
+  // }
+}

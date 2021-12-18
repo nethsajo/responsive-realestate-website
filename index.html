@@ -1,697 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <!-- STYLES -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Real Estate Website</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__logo-box">
-        <h2 class="header__logo">VillaLancaster</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <!-- STYLES -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Real Estate Website</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo-box">
+      <h2 class="header__logo">VillaLancaster</h2>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Properties</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Agents</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__register-box">
+      <a href="#" class="btn btn--simple">Sign up</a>
+      <a href="#" class="btn-arrowed btn--primary btn--lg">
+        <span class="btn-arrowed__title">Get started</span>
+        <ion-icon name="arrow-forward-outline" class="btn-arrowed__icon"></ion-icon>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <!-- HERO SECTION -->
+    <section class="section-hero">
+      <div class="hero d-grid">
+        <div class="hero__top-col">
+          <h1 class="heading-primary u-margin-bottom-md">Let's find a home that's perfect for your family</h1>
+          <p class="hero__description">
+            The place to start your new comfortable life at! We provide our clients with a great selection of luxury,
+            modern
+            and unique house.
+          </p>
+          <a href="#" class="btn btn--primary btn--lg">View all properties</a>
+        </div>
+        <div class="hero__bottom-col">
+          <div class="seenon">
+            <h2 class="seenon__text">As seen on</h2>
+            <div class="seenon__logos">
+              <img src="./assets/images/featured/business-insider.png" alt="Business Insider" class="seenon__logo">
+              <img src="./assets/images/featured/forbes.png" alt="Forbes" class="seenon__logo">
+              <img src="./assets/images/featured/the-new-york-times.png" alt="New York Times" class="seenon__logo">
+              <img src="./assets/images/featured/usa-today.png" alt="USA Today" class="seenon__logo">
+            </div>
+          </div>
+        </div>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Properties</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Agents</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header__register-box">
-        <a href="#" class="btn btn--simple">Sign up</a>
-        <a href="#" class="btn-arrowed btn--primary btn--lg">
-          <span class="btn-arrowed__title">Get started</span> 
-          <ion-icon name="arrow-forward-outline" class="btn-arrowed__icon"></ion-icon>
-        </a>
-      </div>
-    </header>
-    <main class="main">
-      <!-- HERO SECTION -->
-      <section class="section-hero">
-        <div class="hero d-grid">
-          <div class="hero__top-col">
-            <h1 class="heading-primary u-margin-bottom-md">Let's find a home that's perfect for your family</h1>
-            <p class="hero__description">
-              The place to start your new comfortable life at! We provide our clients with a great selection of luxury, modern
-              and unique house.
-            </p>
-            <a href="#" class="btn btn--primary btn--sm">View all properties</a>
-          </div>
-          <div class="hero__bottom-col">
-            <div class="seenon">
-              <h2 class="seenon__text">As seen on</h2>
-              <div class="seenon__logos">
-                <img src="./assets/images/featured/business-insider.png" alt="Business Insider" class="seenon__logo">
-                <img src="./assets/images/featured/forbes.png" alt="Forbes" class="seenon__logo">
-                <img src="./assets/images/featured/the-new-york-times.png" alt="New York Times" class="seenon__logo">
-                <img src="./assets/images/featured/usa-today.png" alt="USA Today" class="seenon__logo">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
 
-      <!-- ABOUT SECTION -->
-      <section class="section-about">
-        <div class="container-lg">
-          <div class="about d-grid grid-col-2">
-            <div class="about__achievements">
-              <img src="./assets/images/about.jpg" alt="Inside house" class="about__img">
-              <div class="achievement">
-                <div class="achievement__box achievement__box--1">
-                  <ion-icon name="star" class="achievement__icon"></ion-icon>
-                  <div class="achievement__text-box">
-                    <p class="achievement__number">25</p>
-                    <p class="achievement__text">Years Experienced</p>
-                  </div>
-                </div>
-                <div class="achievement__box achievement__box--3">
-                  <ion-icon name="home" class="achievement__icon"></ion-icon>
-                  <div class="achievement__text-box">
-                    <p class="achievement__number">683+</p>
-                    <p class="achievement__text">Property Built</p>
-                  </div>
-                </div>
-                <div class="achievement__box achievement__box--4">
-                  <ion-icon name="happy" class="achievement__icon"></ion-icon>
-                  <div class="achievement__text-box">
-                    <p class="achievement__number">10,300+</p>
-                    <p class="achievement__text">Happy Clients</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="about__content">
-              <h2 class="about__heading">With 25 years of experience we are ready to help you</h2>
-              <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum provident pariatur velit, quod vero officia! Iste earum quos totam, iusto voluptatum quaerat nam esse dolorem quod veritatis distinctio eaque!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROPERTY SECTION -->
-      <section class="section-property">
-        <div class="container-sm d-grid grid-col-2 grid-center-v u-margin-bottom-xl">
-          <h2 class="heading-secondary">Choose from our listing properties</h2>
-          <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab culpa dicta repellendus iusto consequatur quia!</p>
-          </div>
-        </div>
-        <div class="container-lg u-margin-bottom-lg">
-          <div class="property">
-            <div class="property__box">
-              <img src="./assets/images/house/house-1.jpeg" alt="House 1" class="property__img">
-              <div class="property__text-box">
-                <div class="property__header">
-                  <span class="property__type property__type--house">Single &mdash; Family House</span>
-                  <p class="property__price">$125,000</p>
-                </div>
-                <h3 class="property__title">Beatiful Family House</h3>
-
-                <div class="property__location">
-                  <ion-icon name="location" class="property__icon"></ion-icon>
-                  <p class="property__address">2414 Wellington St., Los Angeles</p>
-                </div>
-                <div class="property__information u-margin-bottom-sm">
-                  <p class="property__description">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum.</p>
-                  
-                  <ul class="property__list">
-                    <li class="property__item">
-                      <ion-icon name="people" class="property__icon"></ion-icon>
-                      <span class="property__text">4 rooms</span>
-                    </li>
-                    <li class="property__item">
-                      <ion-icon name="contract" class="property__icon"></ion-icon>
-                      <span class="property__text">328 m<sup>2</sup></span>
-                    </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
-                </div>
-                <div class="property__footer">
-                  <div class="property__realtor">
-                    <img src="./assets/images/realtors/realtor-1.jpg" alt="Realtor 1" class="property__realtor-img">
-                    <span class="property__realtor-name">Travis Chasey</span>
-                  </div>
-                  <div class="property__actions">
-                    <ion-icon name="share-social-outline" class="property__action"></ion-icon>
-                    <ion-icon name="heart-outline" class="property__action"></ion-icon>
-                    <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="property__box">
-              <img src="./assets/images/house/house-2.jpeg" alt="House 2" class="property__img">
-              <div class="property__text-box">
-                <div class="property__header">
-                  <span class="property__type property__type--rental">Rental House</span>
-                  <p class="property__price">$4,500/month</p>
-                </div>
-                <h3 class="property__title">Cozy Country House</h3>
-
-                <div class="property__location">
-                  <ion-icon name="location" class="property__icon"></ion-icon>
-                  <p class="property__address">113 Rue King St., Canada</p>
-                </div>
-                <div class="property__information u-margin-bottom-sm">
-                  <p class="property__description">Pariatur voluptatibus quidem harum, voluptatum mollitia quae.</p>
-                
-                  <ul class="property__list">
-                    <li class="property__item">
-                      <ion-icon name="people" class="property__icon"></ion-icon>
-                      <span class="property__text">2 rooms</span>
-                    </li>
-                    <li class="property__item">
-                      <ion-icon name="contract" class="property__icon"></ion-icon>
-                      <span class="property__text">225 m<sup>2</sup></span>
-                    </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
-                </div>
-                <div class="property__footer">
-                  <div class="property__realtor">
-                    <img src="./assets/images/realtors/realtor-2.jpg" alt="Wilma Moran" class="property__realtor-img">
-                    <span class="property__realtor-name">Wilma Moran</span>
-                  </div>
-                  <div class="property__actions">
-                    <ion-icon name="share-social-outline" class="property__action"></ion-icon>
-                    <ion-icon name="heart-outline" class="property__action"></ion-icon>
-                    <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="property__box">
-              <img src="./assets/images/house/house-3.jpeg" alt="House 3" class="property__img">
-              <div class="property__text-box">
-                <div class="property__header">
-                  <span class="property__type property__type--luxury">Luxury House</span>
-                  <p class="property__price">$1,400,000</p>
-                </div>
-                
-                <h3 class="property__title">Majestic Palace House</h3>
-            
-                <div class="property__location">
-                  <ion-icon name="location" class="property__icon"></ion-icon>
-                  <p class="property__address">71 George Street, Broughtown, UK</p>
-                </div>
-                <div class="property__information u-margin-bottom-sm">
-                  <p class="property__description">Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
-            
-                  <ul class="property__list">
-                    <li class="property__item">
-                      <ion-icon name="people" class="property__icon"></ion-icon>
-                      <span class="property__text">8 rooms</span>
-                    </li>
-                    <li class="property__item">
-                      <ion-icon name="contract" class="property__icon"></ion-icon>
-                      <span class="property__text">578 m<sup>2</sup></span>
-                    </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--xs property__btn">View detail</a>
-                </div>
-                <div class="property__footer">
-                  <div class="property__realtor">
-                    <img src="./assets/images/realtors/realtor-3.jpg" alt="Wilma Moran" class="property__realtor-img">
-                    <span class="property__realtor-name">Jonathan Horan</span>
-                  </div>
-                  <div class="property__actions">
-                    <ion-icon name="share-social-outline" class="property__action"></ion-icon>
-                    <ion-icon name="heart-outline" class="property__action"></ion-icon>
-                    <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="property__box">
-              <img src="./assets/images/house/house-4.jpg" alt="House 4" class="property__img">
-              <div class="property__text-box">
-                <div class="property__header">
-                  <span class="property__type property__type--house">Single &mdash; Family House</span>
-                  <p class="property__price">$378,000</p>
-                </div>
-                <h3 class="property__title">Modern Family House</h3>
-            
-                <div class="property__location">
-                  <ion-icon name="location" class="property__icon"></ion-icon>
-                  <p class="property__address">351 Liberty St. Dallas, Texas, US</p>
-                </div>
-                <div class="property__information u-margin-bottom-sm">
-                  <p class="property__description">Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
-            
-                  <ul class="property__list">
-                    <li class="property__item">
-                      <ion-icon name="people" class="property__icon"></ion-icon>
-                      <span class="property__text">6 rooms</span>
-                    </li>
-                    <li class="property__item">
-                      <ion-icon name="contract" class="property__icon"></ion-icon>
-                      <span class="property__text">432 m<sup>2</sup></span>
-                    </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--xs property__btn">View detail</a>
-                </div>
-                <div class="property__footer">
-                  <div class="property__realtor">
-                    <img src="./assets/images/realtors/realtor-4.jpg" alt="Ronald McHem" class="property__realtor-img">
-                    <span class="property__realtor-name">Ronald McHem</span>
-                  </div>
-                  <div class="property__actions">
-                    <ion-icon name="share-social-outline" class="property__action"></ion-icon>
-                    <ion-icon name="heart-outline" class="property__action"></ion-icon>
-                    <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="property__box">
-              <img src="./assets/images/house/house-5.jpeg" alt="House 5" class="property__img">
-              <div class="property__text-box">
-                <div class="property__header">
-                  <span class="property__type property__type--villa">Villa House</span>
-                  <p class="property__price">$825,000</p>
-                </div>
-                
-                <h3 class="property__title">Modern Glass Villa</h3>
-            
-                <div class="property__location">
-                  <ion-icon name="location" class="property__icon"></ion-icon>
-                  <p class="property__address">Alcon Molina 40, Lorca, Murcia, Spain</p>
-                </div>
-                <div class="property__information u-margin-bottom-sm">
-                  <p class="property__description">Quidem consequatur harum, voluptatum mollitia quae tenetur distinctio.</p>
-            
-                  <ul class="property__list">
-                    <li class="property__item">
-                      <ion-icon name="people" class="property__icon"></ion-icon>
-                      <span class="property__text">5 rooms</span>
-                    </li>
-                    <li class="property__item">
-                      <ion-icon name="contract" class="property__icon"></ion-icon>
-                      <span class="property__text">213 m<sup>2</sup></span>
-                    </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--xs property__btn">View detail</a>
-                </div>
-                <div class="property__footer">
-                  <div class="property__realtor">
-                    <img src="./assets/images/realtors/realtor-5.jpg" alt="Angela Winslow" class="property__realtor-img">
-                    <span class="property__realtor-name">Angela Winslow</span>
-                  </div>
-                  <div class="property__actions">
-                    <ion-icon name="share-social-outline" class="property__action"></ion-icon>
-                    <ion-icon name="heart-outline" class="property__action"></ion-icon>
-                    <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="property__box">
-              <img src="./assets/images/house/house-6.jpeg" alt="House 6" class="property__img">
-              <div class="property__text-box">
-                <div class="property__header">
-                  <span class="property__type property__type--luxury">Luxury House</span>
-                  <p class="property__price">$3,280,000</p>
-                </div>
-                <h3 class="property__title">Large Rustical Villa</h3>
-            
-                <div class="property__location">
-                  <ion-icon name="location" class="property__icon"></ion-icon>
-                  <p class="property__address">37 Linden Suites, San Miguel, Ortigas, PH</p>
-                </div>
-                <div class="property__information u-margin-bottom-sm">
-                  <p class="property__description">Pariatur voluptatibus quidem harum, voluptatum mollitia quae.</p>
-            
-                  <ul class="property__list">
-                    <li class="property__item">
-                      <ion-icon name="people" class="property__icon"></ion-icon>
-                      <span class="property__text">8 rooms</span>
-                    </li>
-                    <li class="property__item">
-                      <ion-icon name="contract" class="property__icon"></ion-icon>
-                      <span class="property__text">637 m<sup>2</sup></span>
-                    </li>
-                  </ul>
-                  <a href="#" class="btn btn--primary btn--xs property__btn">View detail</a>
-                </div>
-                <div class="property__footer">
-                  <div class="property__realtor">
-                    <img src="./assets/images/realtors/realtor-6.jpg" alt="Edwin James" class="property__realtor-img">
-                    <span class="property__realtor-name">Edwin James</span>
-                  </div>
-                  <div class="property__actions">
-                    <ion-icon name="share-social-outline" class="property__action"></ion-icon>
-                    <ion-icon name="heart-outline" class="property__action"></ion-icon>
-                    <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container-lg u-text-center">
-          <a href="#" class="btn btn--outline btn--sm">View all</a>
-        </div>
-      </section>
-
-      <!-- TESTIMONIALS SECTION -->
-      <section class="section-testimonials">
-        <div class="gallery">
-          <figure class="gallery__item gallery__item--1">
-            <img src="./assets/images/gallery/gal-9.jpeg" alt="Gallery 1" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--2">
-            <img src="./assets/images/gallery/gal-2.jpeg" alt="Gallery 2" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--3">
-            <img src="./assets/images/gallery/gal-14.jpeg" alt="Gallery 3" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--4">
-            <img src="./assets/images/gallery/gal-3.jpeg" alt="Gallery 4" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--5">
-            <img src="./assets/images/gallery/gal-8.jpeg" alt="Gallery 5" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--6">
-            <img src="./assets/images/gallery/gal-11.jpeg" alt="Gallery 6" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--7">
-            <img src="./assets/images/gallery/gal-12.jpeg" alt="Gallery 7" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--8">
-            <img src="./assets/images/gallery/gal-1.jpeg" alt="Gallery 8" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--9">
-            <img src="./assets/images/gallery/gal-7.jpeg" alt="Gallery 9" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--10">
-            <img src="./assets/images/gallery/gal-6.jpeg" alt="Gallery 10" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery__item--11">
-            <img src="./assets/images/gallery/gal-4.jpeg" alt="Gallery 11" class="gallery__img">
-          </figure>
-        </div>
-        <div class="testimonials">
-          <h2 class="heading-secondary u-margin-bottom-lg">The highest standards. The happy customers.</h2>
-          <div class="testimonials__container">
-            <figure class="testimonials__box testimonials__box--1">
-              <div class="testimonials__header">
-                <img src="./assets/images/profiles/profile-1.jpg" alt="Profile 1" class="testimonials__img">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Ruth Spencer</p>
-                  <p class="testimonials__position">Hotel Director</p>
-                </div>
-              </div>
-              <blockquote class="testimonials__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias, reiciendis enim ratione ea quo odit blanditiis velit quibusdam magnam tempora cumque quam error recusandae, rerum exercitationem culpa modi necessitatibus, nemo itaque tenetur facilis repellat. Possimus nobis quaerat repellat modi cum excepturi cupiditate sapiente eaque!
-              </blockquote>
-            </figure>
-            <figure class="testimonials__box testimonials__box--2">
-              <div class="testimonials__header">
-                <img src="./assets/images/profiles/profile-2.jpg" alt="Profile 2" class="testimonials__img">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Algernon Mann</p>
-                  <p class="testimonials__position">Physical Anthropologist</p>
-                </div>
-              </div>
-              <blockquote class="testimonials__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestiae saepe ducimus fugiat unde eveniet!
-              </blockquote>
-            </figure>
-            <figure class="testimonials__box testimonials__box--3">
-              <div class="testimonials__header">
-                <img src="./assets/images/profiles/profile-3.jpg" alt="Profile 3" class="testimonials__img">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Prunella Patton</p>
-                  <p class="testimonials__position">Accounting Executive</p>
-                </div>
-              </div>
-              <blockquote class="testimonials__text">
-                Rerum exercitationem culpa modi necessitatibus, nemo itaque tenetur facilis repellat. Possimus nobis quaerat repellat modi cum excepturi cupiditate sapiente eaque! Donec eget nibh nec magna luctus posuere.
-              </blockquote>
-            </figure>
-            <figure class="testimonials__box testimonials__box--4">
-              <div class="testimonials__header">
-                <img src="./assets/images/profiles/profile-4.jpg" alt="Profile 4" class="testimonials__img">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Freddie Mills</p>
-                  <p class="testimonials__position">CEO &mdash; Chicken Factory</p>
-                </div>
-              </div>
-              <blockquote class="testimonials__text">
-                Vivamus viverra, odio sed fermentum convallis, libero est condimentum nisi, at lacinia ex quam placerat lectus. Ut quis
-                tristique lectus. Fusce tempor suscipit viverra. Donec interdum metus sit amet massa accumsan, eu euismod justo
-                malesuada. In in mi nulla.
-              </blockquote>
-            </figure>
-            <figure class="testimonials__box testimonials__box--5">
-              <div class="testimonials__header">
-                <img src="./assets/images/profiles/profile-5.jpg" alt="Profile 5" class="testimonials__img">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Kendrick McCoy</p>
-                  <p class="testimonials__position">Applications Developer</p>
-                </div>
-              </div>
-              <blockquote class="testimonials__text">
-                Suspendisse potenti. Proin iaculis est a eros scelerisque, convallis gravida leo malesuada. Nulla ultricies risus
-                turpis, cursus commodo lectus gravida sit amet.
-              </blockquote>
-            </figure>
-            <figure class="testimonials__box testimonials__box--6">
-              <div class="testimonials__header">
-                <img src="./assets/images/profiles/profile-6.jpg" alt="Profile 6" class="testimonials__img">
-                <div class="testimonials__info">
-                  <p class="testimonials__name">Anastasia Tingey</p>
-                  <p class="testimonials__position">Handbook Writer</p>
-                </div>
-              </div>
-              <blockquote class="testimonials__text">
-                Nulla sit amet ante id augue fermentum mollis non at sem. Vivamus lacinia in tellus in sodales. Ut tincidunt sagittis
-                urna, eget malesuada sem efficitur id. Nullam lectus erat, faucibus quis ante ac, fermentum ultricies orci.
-              </blockquote>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- AGENTS SECTION -->
-      <section class="section-agents">
-        <div class="container-sm d-grid grid-col-2 grid-center-v u-margin-bottom-xl">
-          <h2 class="heading-secondary">Meet our awesome top realtors</h2>
-          <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab culpa dicta repellendus
-            iusto consequatur quia!</p>
-        </div>
-        <div class="container-lg">
-          <div class="agents">
-            <div class="agent">
-              <figure class="agent__img-box">
-                <img src="./assets/images/realtors/realtor-7.jpg" alt="Realtor" class="agent__img">
-                <figcaption class="agent__caption">345 houses sold</figcaption>
-              </figure>
-              <div class="agent__details">
-                <h3 class="agent__name">
-                  Marty Andrews
-                </h3>
-                <div class="agent__about">
-                  <div class="agent__job">
-                    <ion-icon name="briefcase" class="agent__icon"></ion-icon>
-                    <p class="agent__position">Agent</p>
-                  </div>
-                  <p class="agent__type">Luxury House Real Estate</p>
-                </div>
-                
-                <ul class="agent__links">
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>                  
-                </ul>
-              </div>
-            </div>
-            <div class="agent">
-              <figure class="agent__img-box">
-                <img src="./assets/images/realtors/realtor-8.jpg" alt="Realtor" class="agent__img">
-                <figcaption class="agent__caption">183 houses sold</figcaption>
-              </figure>
-              <div class="agent__details">
-                <h3 class="agent__name">
-                  Audrey Jensen
-                </h3>
-                <div class="agent__about">
-                  <div class="agent__job">
-                    <ion-icon name="briefcase" class="agent__icon"></ion-icon>
-                    <p class="agent__position">Agent</p>
-                  </div>
-                  <p class="agent__type">Villa House Real Estate</p>
-                </div>
-              
-                <ul class="agent__links">
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="agent">
-              <figure class="agent__img-box">
-                <img src="./assets/images/realtors/realtor-9.jpg" alt="Realtor" class="agent__img">
-                <figcaption class="agent__caption">94 houses sold</figcaption>
-              </figure>
-              <div class="agent__details">
-                <h3 class="agent__name">
-                  Mike Mcbride
-                </h3>
-                <div class="agent__about">
-                  <div class="agent__job">
-                    <ion-icon name="briefcase" class="agent__icon"></ion-icon>
-                    <p class="agent__position">Agent</p>
-                  </div>
-                  <p class="agent__type">Rental House Real Estate</p>
-                </div>
-                
-                <ul class="agent__links">
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="agent__link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>                  
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
+    <!-- ABOUT SECTION -->
+    <section class="section-about">
       <div class="container-lg">
-        <div class="footer__container u-margin-bottom-md">
-          <div class="footer__brand">
-            <h2 class="footer__logo u-margin-bottom-sm">VillaLancaster</h2>
-            <p class="footer__description">
-              The place to start your new comfortable life at! We provide our clients with a great selection of luxury, modern and
-              unique house.
-            </p>
+        <div class="about d-grid grid-col-2">
+          <div class="about__achievements">
+            <img src="./assets/images/about.jpg" alt="Inside house" class="about__img">
+            <div class="achievement">
+              <div class="achievement__box achievement__box--1">
+                <ion-icon name="star" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">25</p>
+                  <p class="achievement__text">Years Experienced</p>
+                </div>
+              </div>
+              <div class="achievement__box achievement__box--3">
+                <ion-icon name="home" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">683+</p>
+                  <p class="achievement__text">Property Built</p>
+                </div>
+              </div>
+              <div class="achievement__box achievement__box--4">
+                <ion-icon name="happy" class="achievement__icon"></ion-icon>
+                <div class="achievement__text-box">
+                  <p class="achievement__number">10,300+</p>
+                  <p class="achievement__text">Happy Clients</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <nav class="footer__column">
-            <p class="footer__heading">About Us</p>
-            <ul class="footer__nav">
-              <li><a href="#" class="footer__link">Property FAQ</a></li>
-              <li><a href="#" class="footer__link">Why buy with us?</a></li>
-              <li><a href="#" class="footer__link">Our agent</a></li>
-              <li><a href="#" class="footer__link">Contact us</a></li>
-            </ul>
-          </nav>
-          <nav class="footer__column">
-            <p class="footer__heading">How it works</p>
-            <ul class="footer__nav">
-              <li><a href="#" class="footer__link">Tenants</a></li>
-              <li><a href="#" class="footer__link">Landlord</a></li>
-              <li><a href="#" class="footer__link">Agent</a></li>
-              <li><a href="#" class="footer__link">Teams</a></li>
-            </ul>
-          </nav>
-          <nav class="footer__column">
-            <p class="footer__heading">Resources</p>
-            <ul class="footer__nav">
-              <li><a href="#" class="footer__link">Terms</a></li>
-              <li><a href="#" class="footer__link">Lincenses</a></li>
-              <li><a href="#" class="footer__link">Need help?</a></li>
-              <li><a href="#" class="footer__link">Become an agent</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright">Built by Jan Kenneth Sajo. &copy; 2021 All Rights Reserved.</p>
-          <div class="footer__social">
-            <ul class="footer__links">
-              <li>
-                <a href="#" class="footer__social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer__social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer__social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-            </ul>
+          <div class="about__content">
+            <h2 class="about__heading">With 25 years of experience we are ready to help you</h2>
+            <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum provident
+              pariatur velit, quod vero officia! Iste earum quos totam, iusto voluptatum quaerat nam esse dolorem quod
+              veritatis distinctio eaque!</p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- SCRIPTS -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
+    <!-- PROPERTY SECTION -->
+    <section class="section-property">
+      <div class="container-sm d-grid grid-col-2 grid-center-v u-margin-bottom-xl">
+        <h2 class="heading-secondary">Choose from our listing properties</h2>
+        <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab culpa dicta
+          repellendus iusto consequatur quia!</p>
+      </div>
+      </div>
+      <div class="container-lg u-margin-bottom-lg">
+        <div class="property">
+          <div class="property__box">
+            <img src="./assets/images/house/house-1.jpeg" alt="House 1" class="property__img">
+            <div class="property__text-box">
+              <div class="property__header">
+                <span class="property__type property__type--house">Single &mdash; Family House</span>
+                <p class="property__price">$125,000</p>
+              </div>
+              <h3 class="property__title">Beatiful Family House</h3>
+
+              <div class="property__location">
+                <ion-icon name="location" class="property__icon"></ion-icon>
+                <p class="property__address">2414 Wellington St., Los Angeles</p>
+              </div>
+              <div class="property__information u-margin-bottom-sm">
+                <p class="property__description">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus
+                  rerum.</p>
+
+                <ul class="property__list">
+                  <li class="property__item">
+                    <ion-icon name="people" class="property__icon"></ion-icon>
+                    <span class="property__text">4 rooms</span>
+                  </li>
+                  <li class="property__item">
+                    <ion-icon name="contract" class="property__icon"></ion-icon>
+                    <span class="property__text">328 m<sup>2</sup></span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
+              </div>
+              <div class="property__footer">
+                <div class="property__realtor">
+                  <img src="./assets/images/realtors/realtor-1.jpg" alt="Realtor 1" class="property__realtor-img">
+                  <span class="property__realtor-name">Travis Chasey</span>
+                </div>
+                <div class="property__actions">
+                  <ion-icon name="share-social-outline" class="property__action"></ion-icon>
+                  <ion-icon name="heart-outline" class="property__action"></ion-icon>
+                  <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="property__box">
+            <img src="./assets/images/house/house-2.jpeg" alt="House 2" class="property__img">
+            <div class="property__text-box">
+              <div class="property__header">
+                <span class="property__type property__type--rental">Rental House</span>
+                <p class="property__price">$4,500/month</p>
+              </div>
+              <h3 class="property__title">Cozy Country House</h3>
+
+              <div class="property__location">
+                <ion-icon name="location" class="property__icon"></ion-icon>
+                <p class="property__address">113 Rue King St., Canada</p>
+              </div>
+              <div class="property__information u-margin-bottom-sm">
+                <p class="property__description">Pariatur voluptatibus quidem harum, voluptatum mollitia quae.</p>
+
+                <ul class="property__list">
+                  <li class="property__item">
+                    <ion-icon name="people" class="property__icon"></ion-icon>
+                    <span class="property__text">2 rooms</span>
+                  </li>
+                  <li class="property__item">
+                    <ion-icon name="contract" class="property__icon"></ion-icon>
+                    <span class="property__text">225 m<sup>2</sup></span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
+              </div>
+              <div class="property__footer">
+                <div class="property__realtor">
+                  <img src="./assets/images/realtors/realtor-2.jpg" alt="Wilma Moran" class="property__realtor-img">
+                  <span class="property__realtor-name">Wilma Moran</span>
+                </div>
+                <div class="property__actions">
+                  <ion-icon name="share-social-outline" class="property__action"></ion-icon>
+                  <ion-icon name="heart-outline" class="property__action"></ion-icon>
+                  <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="property__box">
+            <img src="./assets/images/house/house-3.jpeg" alt="House 3" class="property__img">
+            <div class="property__text-box">
+              <div class="property__header">
+                <span class="property__type property__type--luxury">Luxury House</span>
+                <p class="property__price">$1,400,000</p>
+              </div>
+
+              <h3 class="property__title">Majestic Palace House</h3>
+
+              <div class="property__location">
+                <ion-icon name="location" class="property__icon"></ion-icon>
+                <p class="property__address">71 George Street, Broughtown, UK</p>
+              </div>
+              <div class="property__information u-margin-bottom-sm">
+                <p class="property__description">Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+
+                <ul class="property__list">
+                  <li class="property__item">
+                    <ion-icon name="people" class="property__icon"></ion-icon>
+                    <span class="property__text">8 rooms</span>
+                  </li>
+                  <li class="property__item">
+                    <ion-icon name="contract" class="property__icon"></ion-icon>
+                    <span class="property__text">578 m<sup>2</sup></span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
+              </div>
+              <div class="property__footer">
+                <div class="property__realtor">
+                  <img src="./assets/images/realtors/realtor-3.jpg" alt="Wilma Moran" class="property__realtor-img">
+                  <span class="property__realtor-name">Jonathan Horan</span>
+                </div>
+                <div class="property__actions">
+                  <ion-icon name="share-social-outline" class="property__action"></ion-icon>
+                  <ion-icon name="heart-outline" class="property__action"></ion-icon>
+                  <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="property__box">
+            <img src="./assets/images/house/house-4.jpg" alt="House 4" class="property__img">
+            <div class="property__text-box">
+              <div class="property__header">
+                <span class="property__type property__type--house">Single &mdash; Family House</span>
+                <p class="property__price">$378,000</p>
+              </div>
+              <h3 class="property__title">Modern Family House</h3>
+
+              <div class="property__location">
+                <ion-icon name="location" class="property__icon"></ion-icon>
+                <p class="property__address">351 Liberty St. Dallas, Texas, US</p>
+              </div>
+              <div class="property__information u-margin-bottom-sm">
+                <p class="property__description">Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
+                </p>
+
+                <ul class="property__list">
+                  <li class="property__item">
+                    <ion-icon name="people" class="property__icon"></ion-icon>
+                    <span class="property__text">6 rooms</span>
+                  </li>
+                  <li class="property__item">
+                    <ion-icon name="contract" class="property__icon"></ion-icon>
+                    <span class="property__text">432 m<sup>2</sup></span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
+              </div>
+              <div class="property__footer">
+                <div class="property__realtor">
+                  <img src="./assets/images/realtors/realtor-4.jpg" alt="Ronald McHem" class="property__realtor-img">
+                  <span class="property__realtor-name">Ronald McHem</span>
+                </div>
+                <div class="property__actions">
+                  <ion-icon name="share-social-outline" class="property__action"></ion-icon>
+                  <ion-icon name="heart-outline" class="property__action"></ion-icon>
+                  <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="property__box">
+            <img src="./assets/images/house/house-5.jpeg" alt="House 5" class="property__img">
+            <div class="property__text-box">
+              <div class="property__header">
+                <span class="property__type property__type--villa">Villa House</span>
+                <p class="property__price">$825,000</p>
+              </div>
+
+              <h3 class="property__title">Modern Glass Villa</h3>
+
+              <div class="property__location">
+                <ion-icon name="location" class="property__icon"></ion-icon>
+                <p class="property__address">Alcon Molina 40, Lorca, Murcia, Spain</p>
+              </div>
+              <div class="property__information u-margin-bottom-sm">
+                <p class="property__description">Quidem consequatur harum, voluptatum mollitia quae tenetur distinctio.
+                </p>
+
+                <ul class="property__list">
+                  <li class="property__item">
+                    <ion-icon name="people" class="property__icon"></ion-icon>
+                    <span class="property__text">5 rooms</span>
+                  </li>
+                  <li class="property__item">
+                    <ion-icon name="contract" class="property__icon"></ion-icon>
+                    <span class="property__text">213 m<sup>2</sup></span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
+              </div>
+              <div class="property__footer">
+                <div class="property__realtor">
+                  <img src="./assets/images/realtors/realtor-5.jpg" alt="Angela Winslow" class="property__realtor-img">
+                  <span class="property__realtor-name">Angela Winslow</span>
+                </div>
+                <div class="property__actions">
+                  <ion-icon name="share-social-outline" class="property__action"></ion-icon>
+                  <ion-icon name="heart-outline" class="property__action"></ion-icon>
+                  <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="property__box">
+            <img src="./assets/images/house/house-6.jpeg" alt="House 6" class="property__img">
+            <div class="property__text-box">
+              <div class="property__header">
+                <span class="property__type property__type--luxury">Luxury House</span>
+                <p class="property__price">$3,280,000</p>
+              </div>
+              <h3 class="property__title">Large Rustical Villa</h3>
+
+              <div class="property__location">
+                <ion-icon name="location" class="property__icon"></ion-icon>
+                <p class="property__address">37 Linden Suites, San Miguel, Ortigas, PH</p>
+              </div>
+              <div class="property__information u-margin-bottom-sm">
+                <p class="property__description">Pariatur voluptatibus quidem harum, voluptatum mollitia quae.</p>
+
+                <ul class="property__list">
+                  <li class="property__item">
+                    <ion-icon name="people" class="property__icon"></ion-icon>
+                    <span class="property__text">8 rooms</span>
+                  </li>
+                  <li class="property__item">
+                    <ion-icon name="contract" class="property__icon"></ion-icon>
+                    <span class="property__text">637 m<sup>2</sup></span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn--primary btn--xs property__btn">View details</a>
+              </div>
+              <div class="property__footer">
+                <div class="property__realtor">
+                  <img src="./assets/images/realtors/realtor-6.jpg" alt="Edwin James" class="property__realtor-img">
+                  <span class="property__realtor-name">Edwin James</span>
+                </div>
+                <div class="property__actions">
+                  <ion-icon name="share-social-outline" class="property__action"></ion-icon>
+                  <ion-icon name="heart-outline" class="property__action"></ion-icon>
+                  <ion-icon name="bookmark-outline" class="property__action"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg u-text-center">
+        <a href="#" class="btn btn--outline btn--sm">View all</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section-testimonials">
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img src="./assets/images/gallery/gal-9.jpeg" alt="Gallery 1" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img src="./assets/images/gallery/gal-2.jpeg" alt="Gallery 2" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img src="./assets/images/gallery/gal-14.jpeg" alt="Gallery 3" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img src="./assets/images/gallery/gal-3.jpeg" alt="Gallery 4" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img src="./assets/images/gallery/gal-8.jpeg" alt="Gallery 5" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img src="./assets/images/gallery/gal-11.jpeg" alt="Gallery 6" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img src="./assets/images/gallery/gal-12.jpeg" alt="Gallery 7" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img src="./assets/images/gallery/gal-1.jpeg" alt="Gallery 8" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <img src="./assets/images/gallery/gal-7.jpeg" alt="Gallery 9" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <img src="./assets/images/gallery/gal-6.jpeg" alt="Gallery 10" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+          <img src="./assets/images/gallery/gal-4.jpeg" alt="Gallery 11" class="gallery__img">
+        </figure>
+      </div>
+      <div class="testimonials">
+        <h2 class="heading-secondary u-margin-bottom-lg">The highest standards. The happy customers.</h2>
+        <div class="testimonials__container">
+          <figure class="testimonials__box testimonials__box--1">
+            <div class="testimonials__header">
+              <img src="./assets/images/profiles/profile-1.jpg" alt="Profile 1" class="testimonials__img">
+              <div class="testimonials__info">
+                <p class="testimonials__name">Ruth Spencer</p>
+                <p class="testimonials__position">Hotel Director</p>
+              </div>
+            </div>
+            <blockquote class="testimonials__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestias, reiciendis enim ratione
+              ea quo odit blanditiis velit quibusdam magnam tempora cumque quam error recusandae, rerum exercitationem
+              culpa modi necessitatibus, nemo itaque tenetur facilis repellat. Possimus nobis quaerat repellat modi cum
+              excepturi cupiditate sapiente eaque!
+            </blockquote>
+          </figure>
+          <figure class="testimonials__box testimonials__box--2">
+            <div class="testimonials__header">
+              <img src="./assets/images/profiles/profile-2.jpg" alt="Profile 2" class="testimonials__img">
+              <div class="testimonials__info">
+                <p class="testimonials__name">Algernon Mann</p>
+                <p class="testimonials__position">Physical Anthropologist</p>
+              </div>
+            </div>
+            <blockquote class="testimonials__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestiae saepe ducimus fugiat unde eveniet!
+            </blockquote>
+          </figure>
+          <figure class="testimonials__box testimonials__box--3">
+            <div class="testimonials__header">
+              <img src="./assets/images/profiles/profile-3.jpg" alt="Profile 3" class="testimonials__img">
+              <div class="testimonials__info">
+                <p class="testimonials__name">Prunella Patton</p>
+                <p class="testimonials__position">Accounting Executive</p>
+              </div>
+            </div>
+            <blockquote class="testimonials__text">
+              Rerum exercitationem culpa modi necessitatibus, nemo itaque tenetur facilis repellat. Possimus nobis
+              quaerat repellat modi cum excepturi cupiditate sapiente eaque! Donec eget nibh nec magna luctus posuere.
+            </blockquote>
+          </figure>
+          <figure class="testimonials__box testimonials__box--4">
+            <div class="testimonials__header">
+              <img src="./assets/images/profiles/profile-4.jpg" alt="Profile 4" class="testimonials__img">
+              <div class="testimonials__info">
+                <p class="testimonials__name">Freddie Mills</p>
+                <p class="testimonials__position">CEO &mdash; Chicken Factory</p>
+              </div>
+            </div>
+            <blockquote class="testimonials__text">
+              Vivamus viverra, odio sed fermentum convallis, libero est condimentum nisi, at lacinia ex quam placerat
+              lectus. Ut quis
+              tristique lectus. Fusce tempor suscipit viverra. Donec interdum metus sit amet massa accumsan, eu euismod
+              justo
+              malesuada. In in mi nulla.
+            </blockquote>
+          </figure>
+          <figure class="testimonials__box testimonials__box--5">
+            <div class="testimonials__header">
+              <img src="./assets/images/profiles/profile-5.jpg" alt="Profile 5" class="testimonials__img">
+              <div class="testimonials__info">
+                <p class="testimonials__name">Kendrick McCoy</p>
+                <p class="testimonials__position">Applications Developer</p>
+              </div>
+            </div>
+            <blockquote class="testimonials__text">
+              Suspendisse potenti. Proin iaculis est a eros scelerisque, convallis gravida leo malesuada. Nulla
+              ultricies risus
+              turpis, cursus commodo lectus gravida sit amet.
+            </blockquote>
+          </figure>
+          <figure class="testimonials__box testimonials__box--6">
+            <div class="testimonials__header">
+              <img src="./assets/images/profiles/profile-6.jpg" alt="Profile 6" class="testimonials__img">
+              <div class="testimonials__info">
+                <p class="testimonials__name">Anastasia Tingey</p>
+                <p class="testimonials__position">Handbook Writer</p>
+              </div>
+            </div>
+            <blockquote class="testimonials__text">
+              Nulla sit amet ante id augue fermentum mollis non at sem. Vivamus lacinia in tellus in sodales. Ut
+              tincidunt sagittis
+              urna, eget malesuada sem efficitur id. Nullam lectus erat, faucibus quis ante ac, fermentum ultricies
+              orci.
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENTS SECTION -->
+    <section class="section-agents">
+      <div class="container-sm d-grid grid-col-2 grid-center-v u-margin-bottom-xl">
+        <h2 class="heading-secondary">Meet our awesome top realtors</h2>
+        <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab culpa dicta
+          repellendus
+          iusto consequatur quia!</p>
+      </div>
+      <div class="container-lg">
+        <div class="agents">
+          <div class="agent">
+            <figure class="agent__img-box">
+              <img src="./assets/images/realtors/realtor-7.jpg" alt="Realtor" class="agent__img">
+              <figcaption class="agent__caption">345 houses sold</figcaption>
+            </figure>
+            <div class="agent__details">
+              <h3 class="agent__name">
+                Marty Andrews
+              </h3>
+              <div class="agent__about">
+                <div class="agent__job">
+                  <ion-icon name="briefcase" class="agent__icon"></ion-icon>
+                  <p class="agent__position">Agent</p>
+                </div>
+                <p class="agent__type">Luxury House Real Estate</p>
+              </div>
+
+              <ul class="agent__links">
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="agent">
+            <figure class="agent__img-box">
+              <img src="./assets/images/realtors/realtor-8.jpg" alt="Realtor" class="agent__img">
+              <figcaption class="agent__caption">183 houses sold</figcaption>
+            </figure>
+            <div class="agent__details">
+              <h3 class="agent__name">
+                Audrey Jensen
+              </h3>
+              <div class="agent__about">
+                <div class="agent__job">
+                  <ion-icon name="briefcase" class="agent__icon"></ion-icon>
+                  <p class="agent__position">Agent</p>
+                </div>
+                <p class="agent__type">Villa House Real Estate</p>
+              </div>
+
+              <ul class="agent__links">
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="agent">
+            <figure class="agent__img-box">
+              <img src="./assets/images/realtors/realtor-9.jpg" alt="Realtor" class="agent__img">
+              <figcaption class="agent__caption">94 houses sold</figcaption>
+            </figure>
+            <div class="agent__details">
+              <h3 class="agent__name">
+                Mike Mcbride
+              </h3>
+              <div class="agent__about">
+                <div class="agent__job">
+                  <ion-icon name="briefcase" class="agent__icon"></ion-icon>
+                  <p class="agent__position">Agent</p>
+                </div>
+                <p class="agent__type">Rental House Real Estate</p>
+              </div>
+
+              <ul class="agent__links">
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="agent__link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-lg">
+      <div class="footer__container u-margin-bottom-md">
+        <div class="footer__brand">
+          <h2 class="footer__logo u-margin-bottom-sm">VillaLancaster</h2>
+          <p class="footer__description">
+            The place to start your new comfortable life at! We provide our clients with a great selection of luxury,
+            modern and
+            unique house.
+          </p>
+        </div>
+        <nav class="footer__column">
+          <p class="footer__heading">About Us</p>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">Property FAQ</a></li>
+            <li><a href="#" class="footer__link">Why buy with us?</a></li>
+            <li><a href="#" class="footer__link">Our agent</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column">
+          <p class="footer__heading">How it works</p>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">Tenants</a></li>
+            <li><a href="#" class="footer__link">Landlord</a></li>
+            <li><a href="#" class="footer__link">Agent</a></li>
+            <li><a href="#" class="footer__link">Teams</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column">
+          <p class="footer__heading">Resources</p>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">Terms</a></li>
+            <li><a href="#" class="footer__link">Licenses</a></li>
+            <li><a href="#" class="footer__link">Need help?</a></li>
+            <li><a href="#" class="footer__link">Become an agent</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">Built by Jan Kenneth Sajo. &copy; 2021 All Rights Reserved.</p>
+        <div class="footer__social">
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

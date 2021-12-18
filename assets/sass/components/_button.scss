@@ -20,7 +20,7 @@
 
   &:hover,
   &:active {
-    transform: scale(1.03) translateZ(0);
+    transform: translateY(-3px);
   }
 
   &--primary {
