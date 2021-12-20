@@ -24,15 +24,8 @@
   }
 
   &__logo {
-    font-size: 3rem;
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary,
-      $color-primary-dark
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    height: 2.2rem;
+    margin-bottom: 1.6rem;
   }
 
   &__description {
