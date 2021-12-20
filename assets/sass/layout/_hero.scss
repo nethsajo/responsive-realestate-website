@@ -28,9 +28,15 @@
   }
 
   &__top-col {
-    @include container($container-width-sm);
+    max-width: $container-width-sm;
+    margin: 0 auto;
+    padding: 0 3.2rem;
     display: grid;
     justify-items: center;
+
+    @include responsive(phone-xs) {
+      padding: 0;
+    }
   }
 
   &__description {
@@ -38,6 +44,11 @@
     line-height: 1.8;
     text-align: center;
     margin-bottom: 4.8rem;
+
+    @include responsive(phone) {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
   }
 
   &__img {
@@ -48,6 +59,10 @@
 }
 
 .seenon {
+  @include responsive(tab-small) {
+    padding: 2.4rem 0;
+  }
+
   &__text {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -82,11 +97,27 @@
     gap: $column-gap;
     align-items: center;
     justify-content: center;
+
+    @include responsive(tab-portrait) {
+      gap: 4.8rem;
+    }
+
+    @include responsive(phone) {
+      flex-wrap: wrap;
+    }
   }
 
   &__logo {
     height: 3.2rem;
     filter: brightness(0);
     opacity: 30%;
+
+    @include responsive(tab-small) {
+      height: 2.4rem;
+    }
+
+    @include responsive(tab-small) {
+      height: 2rem;
+    }
   }
 }

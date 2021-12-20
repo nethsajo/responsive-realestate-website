@@ -2,6 +2,13 @@
 /*        TYPOGRAPHY        */
 /****************************/
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #464646;
+  line-height: 1;
+}
+
 .heading-primary {
   font-size: 6.2rem;
   font-weight: 900;
@@ -9,6 +16,14 @@
   line-height: 1.05;
   animation: moveInRight 1.5s ease-out;
   text-align: center;
+
+  @include responsive(tab-portrait) {
+    font-size: 5.2rem;
+  }
+
+  @include responsive(phone) {
+    font-size: 4.4rem;
+  }
 }
 
 .heading-secondary {

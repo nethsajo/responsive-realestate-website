@@ -1,9 +1,14 @@
 .property {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  row-gap: $column-gap;
+  row-gap: $row-gap;
   column-gap: $column-gap;
   align-items: start;
+
+  @include responsive(tab-portrait) {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
 
   &__box {
     border-radius: 11px;
@@ -27,6 +32,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 1.6rem;
+    gap: 1.2rem;
   }
 
   &__price {
@@ -86,22 +92,21 @@
   }
 
   &__address {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: 1.2rem;
     color: $color-grey-light-2;
   }
 
   &__information {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: max-content 1fr;
     padding-bottom: 1.8rem;
     border-bottom: 1px solid $color-grey-light-2;
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    line-height: 1.4;
   }
 
   &__description {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
     grid-column: 1 / -1;
   }
 
@@ -126,6 +131,15 @@
   &__footer {
     display: flex;
     align-items: center;
+    gap: 1.2rem;
+
+    @include responsive(tab-portrait) {
+      flex-direction: column;
+    }
+
+    @include responsive(phone) {
+      flex-direction: row;
+    }
   }
 
   &__realtor {

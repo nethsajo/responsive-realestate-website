@@ -31,11 +31,11 @@
     </nav>
     <div class="header__register-box">
       <a href="#" class="btn btn--simple">Sign up</a>
-      <a href="#" class="btn-arrowed btn--primary btn--lg">
-        <span class="btn-arrowed__title">Get started</span>
-        <ion-icon name="arrow-forward-outline" class="btn-arrowed__icon"></ion-icon>
-      </a>
     </div>
+    <button class="header__mobile-nav">
+      <ion-icon class="header__mobile-icon" name="menu-outline"></ion-icon>
+      <ion-icon class="header__mobile-icon" name="close-outline"></ion-icon>
+    </button>
   </header>
   <main class="main">
     <!-- HERO SECTION -->
@@ -48,7 +48,10 @@
             modern
             and unique house.
           </p>
-          <a href="#" class="btn btn--primary btn--lg">View all properties</a>
+          <a href="#" class="btn-arrowed btn--primary btn--lg">
+            <span class="btn-arrowed__title">View all properties</span>
+            <ion-icon name="arrow-forward-outline" class="btn-arrowed__icon"></ion-icon>
+          </a>
         </div>
         <div class="hero__bottom-col">
           <div class="seenon">
@@ -67,9 +70,9 @@
     <!-- ABOUT SECTION -->
     <section class="section-about">
       <div class="container-lg">
-        <div class="about d-grid grid-col-2">
+        <div class="about d-grid grid-col-2 grid-center-v">
           <div class="about__achievements">
-            <img src="./assets/images/about.jpg" alt="Inside house" class="about__img">
+            <img src="./assets/images/about-large.jpg" alt="Inside house" class="about__img">
             <div class="achievement">
               <div class="achievement__box achievement__box--1">
                 <ion-icon name="star" class="achievement__icon"></ion-icon>
@@ -96,9 +99,11 @@
           </div>
           <div class="about__content">
             <h2 class="about__heading">With 25 years of experience we are ready to help you</h2>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum provident
-              pariatur velit, quod vero officia! Iste earum quos totam, iusto voluptatum quaerat nam esse dolorem quod
-              veritatis distinctio eaque!</p>
+            <p class="about__paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
+              necessitatibus pariatur voluptatibus.
+              Quidem consequatur harum volupta!
+            </p>
           </div>
         </div>
       </div>
@@ -109,7 +114,8 @@
       <div class="container-sm d-grid grid-col-2 grid-center-v u-margin-bottom-xl">
         <h2 class="heading-secondary">Choose from our listing properties</h2>
         <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab culpa dicta
-          repellendus iusto consequatur quia!</p>
+          repellendus iusto consequatur quia!
+        </p>
       </div>
       </div>
       <div class="container-lg u-margin-bottom-lg">
@@ -118,7 +124,7 @@
             <img src="./assets/images/house/house-1.jpeg" alt="House 1" class="property__img">
             <div class="property__text-box">
               <div class="property__header">
-                <span class="property__type property__type--house">Single &mdash; Family House</span>
+                <span class="property__type property__type--house">Family House</span>
                 <p class="property__price">$125,000</p>
               </div>
               <h3 class="property__title">Beatiful Family House</h3>
@@ -128,9 +134,6 @@
                 <p class="property__address">2414 Wellington St., Los Angeles</p>
               </div>
               <div class="property__information u-margin-bottom-sm">
-                <p class="property__description">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus
-                  rerum.</p>
-
                 <ul class="property__list">
                   <li class="property__item">
                     <ion-icon name="people" class="property__icon"></ion-icon>
@@ -171,8 +174,6 @@
                 <p class="property__address">113 Rue King St., Canada</p>
               </div>
               <div class="property__information u-margin-bottom-sm">
-                <p class="property__description">Pariatur voluptatibus quidem harum, voluptatum mollitia quae.</p>
-
                 <ul class="property__list">
                   <li class="property__item">
                     <ion-icon name="people" class="property__icon"></ion-icon>
@@ -214,8 +215,6 @@
                 <p class="property__address">71 George Street, Broughtown, UK</p>
               </div>
               <div class="property__information u-margin-bottom-sm">
-                <p class="property__description">Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
-
                 <ul class="property__list">
                   <li class="property__item">
                     <ion-icon name="people" class="property__icon"></ion-icon>
@@ -246,7 +245,7 @@
             <img src="./assets/images/house/house-4.jpg" alt="House 4" class="property__img">
             <div class="property__text-box">
               <div class="property__header">
-                <span class="property__type property__type--house">Single &mdash; Family House</span>
+                <span class="property__type property__type--house">Family House</span>
                 <p class="property__price">$378,000</p>
               </div>
               <h3 class="property__title">Modern Family House</h3>
@@ -256,9 +255,6 @@
                 <p class="property__address">351 Liberty St. Dallas, Texas, US</p>
               </div>
               <div class="property__information u-margin-bottom-sm">
-                <p class="property__description">Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
-                </p>
-
                 <ul class="property__list">
                   <li class="property__item">
                     <ion-icon name="people" class="property__icon"></ion-icon>
@@ -297,12 +293,9 @@
 
               <div class="property__location">
                 <ion-icon name="location" class="property__icon"></ion-icon>
-                <p class="property__address">Alcon Molina 40, Lorca, Murcia, Spain</p>
+                <p class="property__address">Alcon Molina 40, Lorca, Spain</p>
               </div>
               <div class="property__information u-margin-bottom-sm">
-                <p class="property__description">Quidem consequatur harum, voluptatum mollitia quae tenetur distinctio.
-                </p>
-
                 <ul class="property__list">
                   <li class="property__item">
                     <ion-icon name="people" class="property__icon"></ion-icon>
@@ -340,11 +333,9 @@
 
               <div class="property__location">
                 <ion-icon name="location" class="property__icon"></ion-icon>
-                <p class="property__address">37 Linden Suites, San Miguel, Ortigas, PH</p>
+                <p class="property__address">37 Linden Suites, Ortigas, PH</p>
               </div>
               <div class="property__information u-margin-bottom-sm">
-                <p class="property__description">Pariatur voluptatibus quidem harum, voluptatum mollitia quae.</p>
-
                 <ul class="property__list">
                   <li class="property__item">
                     <ion-icon name="people" class="property__icon"></ion-icon>

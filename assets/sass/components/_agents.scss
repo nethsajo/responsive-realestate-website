@@ -5,6 +5,11 @@
   column-gap: $column-gap;
   justify-content: center;
   align-items: center;
+
+  @include responsive(tab-portrait) {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
 }
 
 .agent {

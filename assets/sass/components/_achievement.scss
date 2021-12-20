@@ -8,6 +8,15 @@
   flex-direction: column;
   gap: 2.4rem;
 
+  @include responsive(tab-small) {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translate(0);
+
+    justify-content: center;
+  }
+
   &__box {
     display: flex;
     align-items: center;

@@ -7,11 +7,20 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: 1.5fr repeat(3, minmax(min-content, 1fr));
     row-gap: $row-gap;
     column-gap: $column-gap;
     border-bottom: 1px solid #ddd;
     padding-bottom: 4.8rem;
+
+    @include responsive(tab-portrait) {
+      row-gap: 6.4rem;
+      column-gap: 4.8rem;
+    }
+
+    @include responsive(tab-small) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
   }
 
   &__logo {
@@ -33,6 +42,10 @@
 
   &__column {
     justify-self: end;
+
+    @include responsive(tab-portrait) {
+      justify-self: start;
+    }
   }
 
   &__heading {
@@ -70,6 +83,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include responsive(phone-xs) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.4rem;
+    }
   }
 
   &__copyright {

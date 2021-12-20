@@ -9,6 +9,10 @@
   height: 9.6rem;
   @include container($container-width-lg);
 
+  @include responsive(tab-portrait) {
+    justify-content: flex-start;
+  }
+
   &__logo-box {
     width: auto;
     cursor: pointer;
@@ -20,8 +24,34 @@
   }
 
   &__register-box {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
+    @include responsive(tab-portrait) {
+      margin-left: auto;
+      margin-right: 3.2rem;
+    }
+
+    @include responsive(phone-xs) {
+    }
+  }
+
+  &__mobile-nav {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+
+    @include responsive(tab-portrait) {
+      display: block;
+      z-index: 9999;
+    }
+  }
+
+  &__mobile-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #464646;
+  }
+
+  &__mobile-icon[name="close-outline"] {
+    display: none;
   }
 }
