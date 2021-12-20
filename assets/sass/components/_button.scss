@@ -48,7 +48,11 @@
   }
 
   &--xs {
-    padding: 0.8rem 1.6rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  &--animated {
+    animation: moveInBottom 1s ease-out backwards;
   }
 }
 

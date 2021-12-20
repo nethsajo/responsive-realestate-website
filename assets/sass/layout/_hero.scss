@@ -44,6 +44,7 @@
     line-height: 1.8;
     text-align: center;
     margin-bottom: 4.8rem;
+    animation: moveInLeft 1.5s ease-out;
 
     @include responsive(phone) {
       font-size: 1.6rem;

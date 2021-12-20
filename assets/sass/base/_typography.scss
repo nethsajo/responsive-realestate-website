@@ -30,6 +30,10 @@ body {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.2;
+
+  @include responsive(phone) {
+    font-size: 3rem;
+  }
 }
 
 .subheading {

@@ -13,6 +13,7 @@
 html {
   //10 / 16 = 0.625 * 100 = 62.5% = 1rem = 10px
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   @include responsive(big-desktop) {
     font-size: 75%;

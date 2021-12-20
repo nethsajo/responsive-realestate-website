@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9.6rem;
+  height: $header-height;
   @include container($container-width-lg);
 
   @include responsive(tab-portrait) {
