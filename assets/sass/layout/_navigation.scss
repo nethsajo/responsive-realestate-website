@@ -48,16 +48,11 @@
 
     @include responsive(tab-portrait) {
       flex-direction: column;
-      gap: 4.8rem;
     }
 
     & > * {
       line-height: $header-height;
       padding: 0 1.6rem;
-
-      @include responsive(tab-portrait) {
-        line-height: 6.4rem;
-      }
     }
   }
 
