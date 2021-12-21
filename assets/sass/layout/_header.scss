@@ -8,7 +8,11 @@
   justify-content: space-between;
   align-items: center;
   height: $header-height;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
+
+  @include responsive(tab-landscape) {
+    padding: 0 3.2rem;
+  }
 
   @include responsive(tab-portrait) {
     justify-content: flex-start;
@@ -20,7 +24,7 @@
   }
 
   &__logo {
-    height: 2.2rem;
+    height: 2rem;
   }
 
   &__register-box {

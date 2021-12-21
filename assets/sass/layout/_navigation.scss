@@ -45,7 +45,6 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3.2rem;
 
     @include responsive(tab-portrait) {
       flex-direction: column;
@@ -101,4 +100,8 @@
       }
     }
   }
+}
+
+.sticky .navigation__item {
+  line-height: 8rem;
 }
