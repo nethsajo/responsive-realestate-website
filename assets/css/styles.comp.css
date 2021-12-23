@@ -889,7 +889,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 30em) {
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
@@ -1081,7 +1081,7 @@ body {
   width: 15rem;
   height: 20rem;
   top: 0;
-  left: 8%;
+  left: 10%;
   transform: rotate(-15deg);
 }
 
@@ -1089,7 +1089,7 @@ body {
   width: 15rem;
   height: 25rem;
   bottom: -10%;
-  right: 3%;
+  right: 10%;
   transform: rotate(15deg);
 }
 
@@ -1246,19 +1246,12 @@ body {
 @media only screen and (max-width: 56.25em) {
   .navigation__list {
     flex-direction: column;
-    gap: 4.8rem;
   }
 }
 
 .navigation__list > * {
   line-height: 9.6rem;
   padding: 0 1.6rem;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .navigation__list > * {
-    line-height: 6.4rem;
-  }
 }
 
 .navigation__item {
